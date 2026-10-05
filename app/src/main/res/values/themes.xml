@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base platform theme; all real theming (colors, typography, dark mode) is done in
+         Compose via presentation/theme/Theme.kt. This only prevents a white/black flash
+         before Compose takes over. -->
+    <style name="Theme.Finora" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+    </style>
+</resources>
