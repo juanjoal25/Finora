@@ -52,6 +52,7 @@ import com.finora.app.core.utils.DateFormatter
 import com.finora.app.domain.model.ThemeMode
 import com.finora.app.presentation.components.ConfirmDialog
 import com.finora.app.presentation.components.ErrorState
+import com.finora.app.presentation.components.FinoraTopBar
 import com.finora.app.presentation.components.LoadingState
 import com.finora.app.presentation.theme.FinoraPillShape
 import com.finora.app.presentation.theme.FinoraShapes
@@ -76,6 +77,7 @@ fun ProfileScreen(
     var showLogoutDialog by remember { mutableStateOf(false) }
 
     Scaffold(
+        topBar = { FinoraTopBar(title = "Perfil") },
     ) { padding ->
         when (val state = uiState) {
             is ProfileUiState.Loading -> LoadingState(modifier = Modifier.padding(padding))
@@ -174,6 +176,7 @@ private fun ProfileHeroCard(name: String, email: String, memberSince: String, on
         shape = FinoraShapes.large,
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
+            contentColor = MaterialTheme.colorScheme.onSurface,
         ),
     ) {
         Column(modifier = Modifier.padding(24.dp)) {

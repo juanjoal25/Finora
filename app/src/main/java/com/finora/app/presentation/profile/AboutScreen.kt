@@ -138,6 +138,7 @@ private fun TeamMemberCard(name: String, email: String, onEditClick: () -> Unit)
         shape = FinoraShapes.large,
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
+            contentColor = MaterialTheme.colorScheme.onSurface,
         ),
     ) {
         Row(
@@ -190,6 +191,7 @@ private fun FinoraFooterCard() {
         shape = FinoraShapes.large,
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
+            contentColor = MaterialTheme.colorScheme.onSurface,
         ),
     ) {
         Row(
