@@ -25,6 +25,7 @@ import com.finora.app.presentation.components.BalanceCard
 import com.finora.app.presentation.components.EmptyState
 import com.finora.app.presentation.components.ErrorState
 import com.finora.app.presentation.components.FinanceButton
+import com.finora.app.presentation.components.FinoraTopBar
 import com.finora.app.presentation.components.IncomeExpenseCard
 import com.finora.app.presentation.components.LoadingState
 import com.finora.app.presentation.components.TransactionItem
@@ -37,7 +38,7 @@ fun HomeScreen(
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsState()
-    Scaffold { padding ->
+    Scaffold(topBar = { FinoraTopBar(title = "Inicio") }) { padding ->
         when (val state = uiState) {
             is HomeUiState.Loading -> LoadingState(modifier = Modifier.padding(padding))
             is HomeUiState.Error -> ErrorState(message = state.message, modifier = Modifier.padding(padding))

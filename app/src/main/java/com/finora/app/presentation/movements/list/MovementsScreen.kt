@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.finora.app.presentation.components.EmptyState
 import com.finora.app.presentation.components.ErrorState
+import com.finora.app.presentation.components.FinoraTopBar
 import com.finora.app.presentation.components.LoadingState
 import com.finora.app.presentation.components.TransactionItem
 import com.finora.app.presentation.theme.FinoraPillShape
@@ -39,6 +40,7 @@ fun MovementsScreen(
     val uiState by viewModel.uiState.collectAsState()
 
     Scaffold(
+        topBar = { FinoraTopBar(title = "Movimientos") },
     ) { padding ->
         when (val state = uiState) {
             is MovementsUiState.Loading -> LoadingState(modifier = Modifier.padding(padding))
