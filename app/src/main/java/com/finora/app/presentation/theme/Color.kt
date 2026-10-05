@@ -81,3 +81,7 @@ val LogoBarNavy = Color(0xFF1E3A8A)
 val LogoTrendLine = Color(0xFF60A5FA)
 val LogoTrendDot = Color(0xFF34D399)
 val LogoHorizonLine = Color(0xFF1E293B)
+
+// Semantic colors for money flow (reuse brand tokens so the palette stays consistent).
+val IncomeColor = LightSecondary
+val ExpenseColor = LightError

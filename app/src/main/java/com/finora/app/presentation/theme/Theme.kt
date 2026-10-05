@@ -82,8 +82,10 @@ private val DarkColorScheme = darkColorScheme(
 
 /**
  * Corner radius scale from DESIGN.md's `rounded` tokens (sm/DEFAULT/md/lg/xl/full), mapped
- * onto M3's 5-step Shapes scale. Components whose M3 defaults don't already pull from this
- * (buttons, text fields, chips, cards, bottom sheets) set their shape explicitly using these.
+ * onto M3's 5-step Shapes scale: 4/8/12/16/24dp. Cards use 16dp, bottom sheets 24dp and
+ * chips use the pill shape. Primary = navy (0xFF000F22), secondary = green (0xFF006C4A).
+ * Components whose M3 defaults don't already pull from this (buttons, text fields, chips,
+ * cards, bottom sheets) set their shape explicitly using these.
  */
 val FinoraShapes = Shapes(
     extraSmall = RoundedCornerShape(4.dp),
@@ -94,6 +96,9 @@ val FinoraShapes = Shapes(
 )
 
 val FinoraPillShape = RoundedCornerShape(50)
+
+/** Shape used by filter and category chips (same pill shape, named for intent). */
+val FinoraChipShape = FinoraPillShape
 
 @Composable
 fun FinoraTheme(
