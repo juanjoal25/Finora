@@ -52,7 +52,6 @@ import com.finora.app.core.utils.DateFormatter
 import com.finora.app.domain.model.ThemeMode
 import com.finora.app.presentation.components.ConfirmDialog
 import com.finora.app.presentation.components.ErrorState
-
 import com.finora.app.presentation.components.LoadingState
 import com.finora.app.presentation.theme.FinoraPillShape
 import com.finora.app.presentation.theme.FinoraShapes
@@ -177,7 +176,7 @@ private fun ProfileHeroCard(name: String, email: String, memberSince: String, on
             containerColor = MaterialTheme.colorScheme.surfaceContainerHigh,
         ),
     ) {
-        Column(modifier = Modifier.padding(20.dp)) {
+        Column(modifier = Modifier.padding(24.dp)) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.End,
@@ -189,7 +188,7 @@ private fun ProfileHeroCard(name: String, email: String, memberSince: String, on
             Spacer(modifier = Modifier.height(8.dp))
             Box(
                 modifier = Modifier
-                    .size(64.dp)
+                    .size(72.dp)
                     .clip(CircleShape)
                     .background(MaterialTheme.colorScheme.secondaryContainer),
                 contentAlignment = Alignment.Center,
@@ -198,7 +197,7 @@ private fun ProfileHeroCard(name: String, email: String, memberSince: String, on
                     imageVector = Icons.Filled.AccountCircle,
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onSecondaryContainer,
-                    modifier = Modifier.size(48.dp),
+                    modifier = Modifier.size(56.dp),
                 )
             }
             Spacer(modifier = Modifier.height(12.dp))
@@ -233,7 +232,7 @@ private fun ProfileHeroCard(name: String, email: String, memberSince: String, on
 private fun SectionLabel(text: String) {
     Text(
         text = text,
-        style = MaterialTheme.typography.labelMedium,
+        style = MaterialTheme.typography.labelLarge,
         color = MaterialTheme.colorScheme.onSurfaceVariant,
         modifier = Modifier.padding(vertical = 8.dp),
     )
