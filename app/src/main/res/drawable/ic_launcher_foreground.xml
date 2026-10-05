@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Growth-bars glyph from the real logo (Diseño - Finora/logo/code.html), scaled into the
+     adaptive icon's safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Left pillar -->
+    <path android:fillAlpha="0.75" android:pathData="M32.4,46.8 H32.4 A5.4,5.4 0 0 1 37.8,52.2 V71.4 A5.4,5.4 0 0 1 32.4,77.4 H32.4 A5.4,5.4 0 0 1 27,71.4 V52.2 A5.4,5.4 0 0 1 32.4,46.8 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="16.2"
+                android:startY="10.8"
+                android:endX="91.8"
+                android:endY="97.2">
+                <item android:offset="0" android:color="#3B82F6" />
+                <item android:offset="0.5" android:color="#2563EB" />
+                <item android:offset="1" android:color="#10B981" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Center pillar -->
+    <path android:pathData="M48.6,36 H48.6 A5.4,5.4 0 0 1 54,41.4 V71.4 A5.4,5.4 0 0 1 48.6,77.4 H48.6 A5.4,5.4 0 0 1 43.2,71.4 V41.4 A5.4,5.4 0 0 1 48.6,36 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="16.2"
+                android:startY="10.8"
+                android:endX="91.8"
+                android:endY="97.2">
+                <item android:offset="0" android:color="#3B82F6" />
+                <item android:offset="0.5" android:color="#2563EB" />
+                <item android:offset="1" android:color="#10B981" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Right growth pillar -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M59.4,34.2 C59.4,31.21767 61.81767,28.8 64.8,28.8 H64.8 C67.78233,28.8 70.2,31.21767 70.2,34.2 V72 C70.2,74.98233 67.78233,77.4 64.8,77.4 H64.8 C61.81767,77.4 59.4,74.98233 59.4,72 V34.2 Z" />
+
+    <!-- Upward trend accent line -->
+    <path
+        android:strokeColor="#60A5FA"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round"
+        android:pathData="M27,61.2 C37.8,59.4 48.6,48.6 70.2,28.8" />
+
+    <!-- Trend dot -->
+    <path
+        android:fillColor="#34D399"
+        android:pathData="M65.7,28.8 a4.5,4.5 0 1,0 9,0 a4.5,4.5 0 1,0 -9,0 Z" />
+</vector>
