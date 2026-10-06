@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finora — Política de Privacidad y Términos y Condiciones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #000F22;
+    --primary-container: #0A2540;
+    --secondary: #006C4A;
+    --secondary-container: #82F5C1;
+    --on-secondary-container: #002114;
+    --surface: #FAF8FF;
+    --surface-container: #EAEDFF;
+    --surface-container-high: #E2E7FF;
+    --outline: #C4C6CE;
+    --text: #1B1F27;
+    --text-muted: #43474D;
+    --error: #BA1A1A;
+    --error-container: #FFDAD6;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--surface);
+    color: var(--text);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+
+  .shell {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 16px 80px;
+  }
+
+  header.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-container) 100%);
+    color: #fff;
+    padding: 48px 16px 40px;
+    margin-bottom: 32px;
+  }
+
+  header.hero .hero-inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .brand svg { width: 40px; height: 40px; flex: none; }
+
+  .brand span {
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+  }
+
+  header.hero h1 {
+    margin: 0 0 8px;
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  header.hero p.meta {
+    margin: 0;
+    color: #AEB8CC;
+    font-size: 0.95rem;
+  }
+
+  nav.toc {
+    background: var(--surface-container);
+    border-radius: var(--radius-lg);
+    padding: 20px 24px;
+    margin-bottom: 40px;
+  }
+
+  nav.toc h2 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin: 0 0 12px;
+  }
+
+  nav.toc ol {
+    margin: 0;
+    padding-left: 1.1em;
+    columns: 2;
+    column-gap: 24px;
+  }
+
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+
+  nav.toc a {
+    color: var(--primary-container);
+    text-decoration: none;
+    font-size: 0.93rem;
+  }
+
+  nav.toc a:hover { text-decoration: underline; }
+
+  section.part-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 48px 0 24px;
+  }
+
+  section.part-divider .pill {
+    background: var(--secondary-container);
+    color: var(--on-secondary-container);
+    font-weight: 700;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 6px 14px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  section.part-divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid var(--outline);
+  }
+
+  article h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-container);
+    margin: 36px 0 10px;
+    scroll-margin-top: 20px;
+  }
+
+  article h2 .num {
+    color: var(--secondary);
+    margin-right: 8px;
+  }
+
+  article p { margin: 0 0 14px; color: var(--text); }
+  article ul, article ol.plain { margin: 0 0 14px; padding-left: 1.3em; }
+  article li { margin-bottom: 6px; }
+
+  .card {
+    background: #fff;
+    border: 1px solid var(--outline);
+    border-radius: var(--radius-lg);
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 0.92rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--outline);
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--surface-container-high);
+    font-weight: 700;
+    color: var(--primary-container);
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--outline);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+
+  a.back-top {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    text-decoration: none;
+  }
+
+  a.back-top:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    nav.toc ol { columns: 1; }
+  }
+
+  @media print {
+    header.hero { background: none !important; color: #000 !important; padding: 0 0 16px; }
+    .brand svg rect { fill: #000 !important; }
+    nav.toc { break-after: page; }
+    a.back-top { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="finGrad" x1="15%" y1="10%" x2="85%" y2="90%">
+            <stop offset="0%" stop-color="#3B82F6"/>
+            <stop offset="50%" stop-color="#2563EB"/>
+            <stop offset="100%" stop-color="#10B981"/>
+          </linearGradient>
+        </defs>
+        <rect x="6" y="6" width="108" height="108" rx="28" fill="#0A2540"/>
+        <path d="M26 88C44 88 76 88 94 88" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+        <rect x="30" y="52" width="12" height="34" rx="6" fill="url(#finGrad)" fill-opacity="0.75"/>
+        <rect x="48" y="40" width="12" height="46" rx="6" fill="url(#finGrad)"/>
+        <path d="M66 38C66 34.6863 68.6863 32 72 32C75.3137 32 78 34.6863 78 38V86H66V38Z" fill="#10B981"/>
+        <path d="M30 68C42 66 54 54 78 32" stroke="#60A5FA" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="78" cy="32" r="5" fill="#34D399"/>
+      </svg>
+      <span>Finora</span>
+    </div>
+    <h1>Política de Privacidad y Términos y Condiciones</h1>
+    <p class="meta">Versión de la app: 1.0 &nbsp;·&nbsp; Última actualización: 6 de octubre de 2026</p>
+  </div>
+</header>
+
+<div class="shell">
+
+  <nav class="toc">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#t1">Aceptación de los términos</a></li>
+      <li><a href="#t2">Descripción del servicio</a></li>
+      <li><a href="#t3">Cuenta de usuario</a></li>
+      <li><a href="#t4">Uso aceptable</a></li>
+      <li><a href="#t5">No es asesoría financiera</a></li>
+      <li><a href="#t6">Propiedad intelectual</a></li>
+      <li><a href="#t7">Disponibilidad del servicio</a></li>
+      <li><a href="#t8">Limitación de responsabilidad</a></li>
+      <li><a href="#t9">Terminación</a></li>
+      <li><a href="#t10">Modificaciones a estos términos</a></li>
+      <li><a href="#t11">Ley aplicable</a></li>
+      <li><a href="#p1">Qué datos recopilamos</a></li>
+      <li><a href="#p2">Cómo y dónde se almacenan tus datos</a></li>
+      <li><a href="#p3">Qué no hacemos con tus datos</a></li>
+      <li><a href="#p4">Seguridad</a></li>
+      <li><a href="#p5">Conservación y eliminación de datos</a></li>
+      <li><a href="#p6">Tus derechos</a></li>
+      <li><a href="#p7">Menores de edad</a></li>
+      <li><a href="#p8">Permisos del dispositivo</a></li>
+      <li><a href="#p9">Cambios a esta política</a></li>
+      <li><a href="#p10">Contacto</a></li>
+    </ol>
+  </nav>
+
+  <article>
+
+    <section class="part-divider">
+      <span class="pill">Parte I</span>
+      <hr>
+      <span class="pill">Términos y condiciones</span>
+    </section>
+
+    <p>
+      Estos Términos y Condiciones ("Términos") rigen el uso de la aplicación móvil <strong>Finora</strong>
+      ("la App", "nosotros"), desarrollada por Juan José Espinosa.
+      Al descargar, instalar o usar Finora, aceptas estos Términos en su totalidad. Si no estás de acuerdo, no debes
+      usar la aplicación.
+    </p>
+
+    <h2 id="t1"><span class="num">1.</span>Aceptación de los términos</h2>
+    <p>
+      El uso continuado de Finora después de cualquier actualización de estos Términos constituye tu aceptación de
+      los cambios. Te recomendamos revisar este documento periódicamente.
+    </p>
+
+    <h2 id="t2"><span class="num">2.</span>Descripción del servicio</h2>
+    <p>
+      Finora es una aplicación de finanzas personales que te permite registrar manualmente tus ingresos y gastos,
+      visualizar tu balance, categorizar movimientos y consultar tu historial financiero. Finora <strong>no se
+      conecta a bancos, tarjetas ni entidades financieras reales</strong>: toda la información financiera que
+      visualizas en la App es la que tú mismo introduces manualmente.
+    </p>
+
+    <h2 id="t3"><span class="num">3.</span>Cuenta de usuario</h2>
+    <p>
+      Para usar Finora debes crear una cuenta con tu nombre, correo electrónico y una contraseña. Eres responsable de:
+    </p>
+    <ul>
+      <li>Proporcionar información veraz al registrarte.</li>
+      <li>Mantener la confidencialidad de tu contraseña.</li>
+      <li>Todas las actividades que ocurran bajo tu cuenta en tu dispositivo.</li>
+    </ul>
+    <p>
+      La cuenta y toda la información asociada a ella se almacenan <strong>únicamente en el dispositivo donde
+      instalaste la App</strong> (ver Parte II). No existe recuperación de cuenta vía servidor en la versión actual:
+      si olvidas tu contraseña o pierdes el dispositivo, tus datos no pueden recuperarse de forma remota.
+    </p>
+
+    <h2 id="t4"><span class="num">4.</span>Uso aceptable</h2>
+    <p>Te comprometes a no usar Finora para:</p>
+    <ul>
+      <li>Actividades ilegales o fraudulentas.</li>
+      <li>Intentar acceder sin autorización a sistemas o datos de otros usuarios.</li>
+      <li>Realizar ingeniería inversa, descompilar o modificar la App fuera de lo permitido por la licencia de su código fuente (si aplica).</li>
+      <li>Interferir con el funcionamiento normal de la App.</li>
+    </ul>
+
+    <h2 id="t5"><span class="num">5.</span>No es asesoría financiera</h2>
+    <div class="card">
+      <h3>Aviso importante</h3>
+      <p style="margin:0;">
+        Finora es una herramienta de organización personal. <strong>No constituye asesoría financiera, contable,
+        fiscal ni de inversión.</strong> Las cifras, balances y categorizaciones que muestra la App dependen
+        enteramente de los datos que tú ingresas y pueden contener errores. Antes de tomar decisiones financieras
+        importantes, consulta con un profesional certificado.
+      </p>
+    </div>
+
+    <h2 id="t6"><span class="num">6.</span>Propiedad intelectual</h2>
+    <p>
+      El nombre "Finora", su logotipo, diseño visual, código fuente y demás elementos de la App son propiedad de
+      Juan José Espinosa o se usan bajo licencia, y están
+      protegidos por las leyes de propiedad intelectual aplicables. Estos Términos no te otorgan ningún derecho de
+      propiedad sobre la App, salvo la licencia limitada, no exclusiva e intransferible para usarla conforme a este
+      documento.
+    </p>
+
+    <h2 id="t7"><span class="num">7.</span>Disponibilidad del servicio</h2>
+    <p>
+      Finora funciona de forma local en tu dispositivo y no depende de un servidor para su operación básica. No
+      obstante, no garantizamos que la App esté libre de errores o interrupciones (por ejemplo, por fallos del
+      sistema operativo, actualizaciones o incompatibilidades de hardware). Nos reservamos el derecho de modificar,
+      suspender o descontinuar la App, total o parcialmente, en cualquier momento.
+    </p>
+
+    <h2 id="t8"><span class="num">8.</span>Limitación de responsabilidad</h2>
+    <p>
+      En la máxima medida permitida por la ley aplicable, Juan José Espinosa no será responsable por pérdidas o daños indirectos, incidentales o consecuentes
+      derivados del uso o la imposibilidad de uso de la App, incluyendo —entre otros— la pérdida de datos
+      financieros registrados localmente, decisiones financieras tomadas con base en la información de la App, o
+      fallas del dispositivo del usuario.
+    </p>
+
+    <h2 id="t9"><span class="num">9.</span>Terminación</h2>
+    <p>
+      Puedes dejar de usar Finora en cualquier momento desinstalando la aplicación de tu dispositivo, lo que elimina
+      todos los datos almacenados localmente. Nos reservamos el derecho de suspender el acceso a funciones futuras
+      que requieran servidor (si se incorporan) en caso de incumplimiento de estos Términos.
+    </p>
+
+    <h2 id="t10"><span class="num">10.</span>Modificaciones a estos términos</h2>
+    <p>
+      Podemos actualizar estos Términos para reflejar cambios en la App o en la normativa aplicable. Publicaremos la
+      versión vigente dentro de la App (sección "Acerca de Finora") indicando la fecha de la última actualización.
+    </p>
+
+    <h2 id="t11"><span class="num">11.</span>Ley aplicable</h2>
+    <p>
+      Estos Términos se rigen por las leyes de Colombia, sin perjuicio de las normas de protección al consumidor
+      y de datos personales que puedan aplicar según tu lugar de residencia.
+    </p>
+
+    <section class="part-divider">
+      <span class="pill">Parte II</span>
+      <hr>
+      <span class="pill">Política de privacidad</span>
+    </section>
+
+    <p>
+      Esta Política de Privacidad explica qué información recopila Finora, cómo se almacena y cuáles son tus
+      derechos sobre ella. La leemos en conjunto con los Términos y Condiciones anteriores.
+    </p>
+
+    <h2 id="p1"><span class="num">1.</span>Qué datos recopilamos</h2>
+    <table>
+      <thead>
+        <tr><th>Dato</th><th>Para qué se usa</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Nombre completo</td><td>Personalizar tu perfil y saludo dentro de la App</td></tr>
+        <tr><td>Correo electrónico</td><td>Identificar tu cuenta e iniciar sesión</td></tr>
+        <tr><td>Contraseña</td><td>Proteger el acceso a tu cuenta (se almacena como hash, nunca en texto plano — ver sección 3)</td></tr>
+        <tr><td>Movimientos financieros (ingresos/gastos, montos, categorías, fechas, descripciones)</td><td>Mostrar tu balance, historial y estadísticas dentro de la App</td></tr>
+        <tr><td>Preferencias (moneda, tema claro/oscuro, nombre y correo de créditos)</td><td>Personalizar la experiencia de la App</td></tr>
+      </tbody>
+    </table>
+    <p>
+      No recopilamos datos de ubicación, contactos, cámara, archivos multimedia ni ningún otro dato del dispositivo
+      que no esté listado arriba.
+    </p>
+
+    <h2 id="p2"><span class="num">2.</span>Cómo y dónde se almacenan tus datos</h2>
+    <p>
+      En la versión actual de Finora, <strong>todos tus datos se almacenan localmente en tu propio dispositivo</strong>,
+      usando una base de datos local (Room) y un almacén de preferencias (DataStore) del sistema operativo Android.
+    </p>
+    <ul>
+      <li><strong>No existe un servidor backend</strong> al que se envíen tus datos: Finora no sincroniza, respalda ni transmite tu información financiera a internet.</li>
+      <li>Tu contraseña se almacena como un <em>hash</em> irreversible (PBKDF2 con sal aleatoria por usuario), nunca en texto plano.</li>
+      <li>Si desinstalas la App o borras sus datos desde los ajustes del sistema, toda tu información se elimina de forma permanente e irrecuperable.</li>
+    </ul>
+
+    <h2 id="p3"><span class="num">3.</span>Qué no hacemos con tus datos</h2>
+    <ul>
+      <li>No vendemos, alquilamos ni compartimos tu información con terceros.</li>
+      <li>No usamos tus datos financieros con fines publicitarios.</li>
+      <li>No integramos herramientas de analítica o rastreo de terceros en esta versión de la App.</li>
+      <li>No creamos perfiles de comportamiento para publicidad dirigida.</li>
+    </ul>
+    <p>
+      Si en una futura versión se añade sincronización en la nube, analítica (p. ej. Firebase), notificaciones push
+      o servicios de terceros, esta sección se actualizará para reflejarlo antes de publicar dicha versión.
+    </p>
+
+    <h2 id="p4"><span class="num">4.</span>Seguridad</h2>
+    <p>
+      Aplicamos medidas razonables para proteger tu información, incluyendo el almacenamiento cifrado por hash de
+      contraseñas (PBKDF2WithHmacSHA256 con sal aleatoria). Sin embargo, ningún sistema es 100&nbsp;% seguro: te
+      recomendamos usar un bloqueo de pantalla en tu dispositivo, ya que cualquier persona con acceso físico
+      desbloqueado a tu teléfono podría abrir la App si ya iniciaste sesión.
+    </p>
+
+    <h2 id="p5"><span class="num">5.</span>Conservación y eliminación de datos</h2>
+    <p>
+      Tus datos permanecen en el dispositivo mientras la App esté instalada y no borres sus datos manualmente.
+      Puedes eliminarlos en cualquier momento:
+    </p>
+    <ol class="plain">
+      <li>Desinstalando la App completamente, o</li>
+      <li>Borrando los datos de la aplicación desde Ajustes del sistema → Apps → Finora → Almacenamiento → Borrar datos.</li>
+    </ol>
+    <p>Ambas acciones son irreversibles y eliminan toda tu información de forma permanente del dispositivo.</p>
+
+    <h2 id="p6"><span class="num">6.</span>Tus derechos</h2>
+    <p>
+      Dado que tus datos están exclusivamente en tu dispositivo, tienes control directo y total sobre ellos en todo
+      momento:
+    </p>
+    <ul>
+      <li><strong>Acceso:</strong> puedes consultar toda tu información financiera y de perfil directamente en la App.</li>
+      <li><strong>Rectificación:</strong> puedes editar tu nombre, correo y cualquier movimiento desde las pantallas de edición de la App.</li>
+      <li><strong>Eliminación:</strong> puedes borrar movimientos individuales o eliminar todos tus datos desinstalando la App (sección 5).</li>
+      <li><strong>Portabilidad:</strong> actualmente no existe una función de exportación de datos.</li>
+    </ul>
+
+    <h2 id="p7"><span class="num">7.</span>Menores de edad</h2>
+    <p>
+      Finora no está dirigida a menores de 16 años.
+      No recopilamos intencionalmente información de menores. Si eres padre, madre o tutor y crees que un menor ha
+      creado una cuenta, contáctanos para eliminarla.
+    </p>
+
+    <h2 id="p8"><span class="num">8.</span>Permisos del dispositivo</h2>
+    <p>
+      Finora no solicita permisos sensibles del sistema (cámara, ubicación, contactos, almacenamiento de archivos,
+      etc.) más allá de lo estrictamente necesario para su funcionamiento local. Esta sección se actualizará si una
+      futura versión solicita permisos adicionales, como acceso a notificaciones o biometría.
+    </p>
+
+    <h2 id="p9"><span class="num">9.</span>Cambios a esta política</h2>
+    <p>
+      Podemos actualizar esta Política de Privacidad ocasionalmente. Cualquier cambio se reflejará con una nueva
+      fecha de "Última actualización" en la parte superior de este documento y, cuando sea significativo, se
+      notificará dentro de la App.
+    </p>
+
+    <h2 id="p10"><span class="num">10.</span>Contacto</h2>
+    <p>
+      Si tienes preguntas sobre estos Términos y Condiciones o esta Política de Privacidad, puedes escribirnos a:
+    </p>
+    <div class="card">
+      <p style="margin:0;">
+        <strong>Juan José Espinosa</strong><br>
+        Correo: juanjoal25@hotmail.com<br>
+        Colombia
+      </p>
+    </div>
+
+    <a class="back-top" href="#top">↑ Volver al inicio</a>
+
+  </article>
+
+  <footer>
+    <p>
+      © 2026 Finora. Este documento es una plantilla generada automáticamente a partir del funcionamiento real de la
+      app descrito en su código fuente; no sustituye asesoría legal profesional.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
